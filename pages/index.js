@@ -1,15 +1,18 @@
 import Link from 'next/link'
+import Title from '../styles/title.js'
+import environment from './../environments/env-config.js'
 
-process.env.LINK_PREFIX = '';
+environment.link_prefix = '';
 if(process.env.NODE_ENV !== 'development') {
-    process.env.LINK_PREFIX = '/default';
+    environment.link_prefix = '/default';
 }
 
 const Index = () => (
     <div>
+        <Title>Enterthusiast code playground</Title>
         <div>Welcome to next.js! (PS: I'm running on AWS Lambda, thanks to scandium)</div>
         <div>
-            <Link href={`${process.env.LINK_PREFIX}/wow-character`}>
+            <Link href={`${environment.link_prefix}/wow-character`}>
                 <a>Check my main wow character</a>
             </Link>
         </div>
