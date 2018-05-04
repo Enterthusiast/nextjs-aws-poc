@@ -27,3 +27,12 @@ The core of the project is build with Nextjs (https://nextjs.org/learn/basics/ge
 This project use scandium (https://www.npmjs.com/package/scandium) to package and deploy on aws.
 Note that scandium requires docker (https://docs.docker.com/install/) to be installed.
 
+### Deploy
+
+Before deploying make sure your aws credential are correctly set on your machine (https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html).
+
+Then execute:
+
+````
+scandium update --name=nextjs-aws-poc
+````

@@ -3,6 +3,7 @@ import createReactClass from 'create-react-class'
 import Router from 'next/router'
 import fetch from 'isomorphic-unfetch'
 import environment from './../environments/env-config.js'
+import Link from 'next/link'
 
 const WowCharacter = createReactClass ({
     statics: {
@@ -97,6 +98,9 @@ const WowCharacter = createReactClass ({
 
         return (
             <div>
+                <Link href={`${environment.link_prefix}/`}>
+                    <a>Home</a>
+                </Link>
                 <h1>Wow character finder</h1>
                 <form onSubmit={this.formSubmit}>
                     <input type="text" onChange={this.formChange.bind(this, 'locale')} value={this.state.characterSearch.locale} placeholder="locale"/>

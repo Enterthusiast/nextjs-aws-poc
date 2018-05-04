@@ -2,11 +2,6 @@ import Link from 'next/link'
 import Title from '../styles/title.js'
 import environment from './../environments/env-config.js'
 
-environment.link_prefix = '';
-if(process.env.NODE_ENV !== 'development') {
-    environment.link_prefix = '/default';
-}
-
 const Index = () => (
     <div>
         <Title>Enterthusiast code playground</Title>
