@@ -32,7 +32,10 @@ Note that scandium requires docker (https://docs.docker.com/install/) to be inst
 Before deploying make sure your aws credential are correctly set on your machine (https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html).
 
 Then execute:
-
+````
+scandium create --name=nextjs-aws-poc
+````
+or if you already create the project:
 ````
 scandium update --name=nextjs-aws-poc
 ````
