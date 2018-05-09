@@ -1,5 +1,8 @@
-const environment = require('./environments/env-config.js');
+assetPrefix = '';
+if(process.env.NODE_ENV !== 'development') {
+    assetPrefix = '/default';
+}
 
 module.exports = {
-    assetPrefix: environment.assetPrefix
+    assetPrefix
 }
