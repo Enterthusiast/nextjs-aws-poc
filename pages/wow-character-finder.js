@@ -12,8 +12,6 @@ import ScTitle from '../styles/sc-title'
 import environment from '../environments/env-config.js'
 import AppWowCharacterFinder from '../components/app-wow-character-finder.js';
 
-
-
 const PageWowCharacterFinder = createReactClass ({
     statics: {
         async getInitialProps({ query }) {

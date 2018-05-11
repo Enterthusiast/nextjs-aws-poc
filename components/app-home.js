@@ -24,7 +24,13 @@ const Home = createReactClass ({
                             Hello interweb wanderer \o/
                             <br/>
                             <br/>
-                            Here I'm playing with next.js and aws with a packager and uploader named scandium.
+                            Here I'm playing with next.js and aws lambda with a packager and uploader named scandium.
+                            <br/>
+                            I also added a list of article using dynamoDB with aws lambda again.
+                            <br/>
+                            <Link href={`${environment.link_prefix}/article`}>
+                                <a>Article list</a>
+                            </Link>
                             <br/>
                             <br/>
                             By the way we are also connected to the blizzard api, feel free to check your own character.
