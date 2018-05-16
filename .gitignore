@@ -1,6 +1,7 @@
 # Project ignore
 .next
 environments/env-config.js
+.DS_Store
 
 # Default Github generated
 # Logs

@@ -35,7 +35,7 @@ describe('With Enzyme', () => {
     }
     const app = mount(<AppArticleList {...props}/>)
 
-    expect(app.find('div .character-not-found')).toBeTruthy()
+    expect(app.find('div .character-not-found').text()).toEqual("No article found.")
   })
 })
 

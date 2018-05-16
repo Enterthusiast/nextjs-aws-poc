@@ -3,7 +3,9 @@
     "version": "0.0.0",
     "scripts": {
         "dev": "NODE_ENV=development node .",
-        "test": "NODE_ENV=test jest"
+        "test": "NODE_ENV=test jest --verbose",
+        "build": "next build",
+        "deploy-aws": "next build && scandium update --name=nextjs-aws-poc"
     },
     "dependencies": {
         "babel-plugin-styled-components": "^1.5.1",
