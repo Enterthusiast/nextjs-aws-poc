@@ -1,4 +1,5 @@
 import createReactClass from 'create-react-class'
+import PropTypes from 'prop-types';
 
 import Link from 'next/link'
 
@@ -21,7 +22,7 @@ const ArticleList = createReactClass ({
                 );
             })
         ) : (
-            <div>No article found.</div>
+            <div className="character-not-found">No article found.</div>
         );
 
         return(
@@ -47,6 +48,27 @@ const ArticleList = createReactClass ({
         )
     }
 });
+
+ArticleList.propTypes = {
+    articleList: PropTypes.arrayOf(function(propValue, key, componentName, location, propFullName) {
+        var missingPropertyList = [];
+
+        ['id', 'title', 'content'].map(property => {
+            if(!propValue[key].hasOwnProperty(property)) {
+                missingPropertyList.push(property)
+            }
+        })
+
+        if(missingPropertyList.length > 0) {
+            return new Error(
+                'Invalid prop `' + propFullName + '` supplied to' +
+                ' `' + componentName + '`. Validation failed.' +
+                ' Missing properties: ' + missingPropertyList.join(', ')
+                );
+        }
+
+    })
+};
 
 const AppArticleList = AppBody(ArticleList);
 
