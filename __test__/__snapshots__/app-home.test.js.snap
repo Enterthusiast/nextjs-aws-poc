@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing AppHome match snapshot 1`] = `
+<div
+  className="sc-bdVaJa jMztiP"
+>
+  <div>
+    <section
+      className="section"
+    >
+      <div
+        className="container"
+      >
+        <h1
+          className="title sc-bwzfXH gLzMBj"
+        >
+          Enterthusiast code playground
+        </h1>
+        <p
+          className="subtitle"
+        >
+          A 
+          <strong>
+            serverless
+          </strong>
+           website.
+        </p>
+      </div>
+    </section>
+    <section
+      className="section is-medium"
+    >
+      <div
+        className="container"
+      >
+        <p>
+          Hello interweb wanderer \\o/
+          <br />
+          <br />
+          Here I'm playing with next.js and aws lambda with a packager and uploader named scandium.
+          <br />
+          I also added a list of article using dynamoDB with aws lambda again.
+          <br />
+          <a
+            href="/default/article"
+            onClick={[Function]}
+          >
+            Article list
+          </a>
+          <br />
+          <br />
+          By the way we are also connected to the blizzard api, feel free to check your own character.
+          <br />
+          <a
+            href="/default/wow-character-finder"
+            onClick={[Function]}
+          >
+            WoW character finder
+          </a>
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
+`;

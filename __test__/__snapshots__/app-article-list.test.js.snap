@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With Snapshot Testing AppArticleList match snapshot 1`] = `
+<div
+  className="sc-bdVaJa jMztiP"
+>
+  <div>
+    <section
+      className="section"
+    >
+      <div
+        className="container"
+      >
+        <a
+          href="/default/"
+          onClick={[Function]}
+        >
+          &lt; Home
+        </a>
+        <h1
+          className="title sc-bwzfXH gLzMBj"
+        >
+          Articles
+        </h1>
+        <p
+          className="subtitle"
+        >
+          Article(s) coming from a 
+          <strong>
+            serverless combo
+          </strong>
+          , DynamoDB + AWS Lambda.
+        </p>
+      </div>
+    </section>
+    <section
+      className="section is-medium"
+    >
+      <div
+        className="container"
+      >
+        <div>
+          No article found.
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

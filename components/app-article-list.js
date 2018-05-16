@@ -9,9 +9,9 @@ import environment from '../environments/env-config.js'
 const ArticleList = createReactClass ({
     render() {
         const articleList = (this.props && this.props.articleList && this.props.articleList.length > 0) ? (
-            this.props.articleList.map((article) => {
+            this.props.articleList.map((article, index) => {
                 return(
-                    <div className="content">
+                    <div className={`content article-${article.id}`} key={article.id}>
                         <h2>{article.title}</h2>
                         <p>
                             {article.content}

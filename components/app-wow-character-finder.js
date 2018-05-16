@@ -49,21 +49,21 @@ const WowCharacterFinder = createReactClass ({
             <div>
                 <img src={`https://render-eu.worldofwarcraft.com/character/${this.props.character.thumbnail}`}/>
                 <ul>
-                    <li>Name: {this.props.character.name}</li>
-                    <li>Level: {this.props.character.level}</li>
-                    <li>Realm: {this.props.character.realm}</li>
+                    <li className="name">Name: {this.props.character.name}</li>
+                    <li className="level">Level: {this.props.character.level}</li>
+                    <li className="realm">Realm: {this.props.character.realm}</li>
                     <hr/>
-                    <li>Class: {this.props.character.class}</li>
-                    <li>Race: {this.props.character.race}</li>
-                    <li>Gender: {this.props.character.gender ? 'Female' : 'Male'}</li>
+                    <li className="class">Class: {this.props.character.class}</li>
+                    <li className="race">Race: {this.props.character.race}</li>
+                    <li className="gender">Gender: {this.props.character.gender ? 'Female' : 'Male'}</li>
                     <hr/>
-                    <li>Battlegroup: {this.props.character.battlegroup}</li>
-                    <li>Honorable kills: {this.props.character.totalHonorableKills}</li>
-                    <li>Achievement points: {this.props.character.achievementPoints}</li>
+                    <li className="battlegroup">Battlegroup: {this.props.character.battlegroup}</li>
+                    <li className="honorable-kills">Honorable kills: {this.props.character.totalHonorableKills}</li>
+                    <li className="achievement-points">Achievement points: {this.props.character.achievementPoints}</li>
                 </ul>
             </div>
         ) : (
-            <div>No character found</div>
+            <div className="character-not-found">No character found</div>
         );
 
         return (

@@ -6,7 +6,7 @@ const environment = {
 // url change from dev to aws lambda environment
 // we need to add a prefix
 environment.link_prefix = '';
-if(process.env.NODE_ENV !== 'development') {
+if(process.env.NODE_ENV !== 'development' && process.env.NODE_ENV !== 'test') {
     environment.link_prefix = '/default';
 }
 
